@@ -295,6 +295,7 @@ module.exports = {
       "5xl": ["3rem", { lineHeight: "1" }],
       "6xl": ["3.75rem", { lineHeight: "1" }],
       "7xl": ["4.5rem", { lineHeight: "1" }],
+      "7.25xl": ["5.5rem", { lineHeight: "1" }],
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
     },
@@ -677,6 +678,7 @@ module.exports = {
       110: "1.1",
       125: "1.25",
       150: "1.5",
+      160: "1.6",
     },
     sepia: {
       0: "0",

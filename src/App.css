@@ -75,3 +75,18 @@
     #bbdef2 99.88%
   );
 }
+
+input-email::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+input-email:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+input-email::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
