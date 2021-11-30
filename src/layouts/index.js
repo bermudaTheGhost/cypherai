@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BrowserRouter as Link } from "react-router-dom";
 import "../styles/layout.css";
 import logo from "../logo.svg";
-import logoWhite from "../cypher-09.svg";
 import menu from "../images/menu.png";
 import product from "../images/product.svg";
 import MenuNav from "./MenuNav";
@@ -23,11 +22,7 @@ const ScreenLayout = ({ children }) => {
           {modalVisible && <MenuNav close={closeModal} />}
           <div className="container mx-auto flex items-center justify-between h-20 pr-6 pl-1">
             <a href="/" className="nav-link">
-                <img
-                src={logo}
-                className="logo h-20 cursor-pointer"
-                alt="logo"
-              />
+              <img src={logo} className="logo h-20 cursor-pointer" alt="logo" />
             </a>
             <img
               src={menu}
