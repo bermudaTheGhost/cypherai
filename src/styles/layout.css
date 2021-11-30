@@ -1,0 +1,36 @@
+.text-gradient {
+  background: linear-gradient(90deg, #d1aad7, #c88bc4 25%, #7b8fdd 50%, #86bff2 74.87%, #bbdef2 99.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background-black-10 {
+  background-color: #171717;
+
+}
+
+.border-black-3 {
+  border-color: #232324;
+}
+
+.text-overtitle, .text-overtitle-sm {
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+.font-h4 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.text-grey-30 {
+  color: #A3A3A3;
+}
+
+.text-grey-20 {
+  color: #D4D4D4;
+}
+
+.hover-scale :hover img {
+  transform: scale(1.1)
+}

@@ -91,28 +91,28 @@ const AboutUs = () => {
   return (
     <div className="about-us-section">
       <div className="mb-20">
-        <div class="absolute inset-0 z-0 pointer-events-none isLoaded">
+        <div className="absolute inset-0 z-0 pointer-events-none isLoaded">
           <div className="gradient-background" />
-          <div class="absolute inset-0 w-full bg-gradient-to-b from-black" />
+          <div className="absolute inset-0 w-full bg-gradient-to-b from-black h-screen" />
         </div>
 
         <div className="px-4 lg:px-0 py-16 lg:py-32 xl:py-56 xl:pt-40">
           <div className="container relative lg:px-8">
             <img
-              class="mt-0  mb-8 h-16 md:h-18"
+              className="mt-0  mb-8 h-16 md:h-18"
               src={FlagIcon}
               alt="About Page Icon"
             />
 
-            <h1 class="text-white font-aeonik font-light text-4xl md:text-7xl mb-8">
-              <div class="lg:max-w-6xl">
+            <h1 className="text-white font-aeonik font-light text-4xl md:text-7xl mb-8">
+              <div className="lg:max-w-6xl">
                 Our mission is to accelerate the development of
                 AI&nbsp;applications
               </div>
             </h1>
 
-            <p class="text-white text-lg md:text-lg">
-              <div class="lg:max-w-5xl">
+            <p className="text-white text-lg md:text-lg">
+              <div className="lg:max-w-5xl">
                 Better data leads to more performant models. Performant models
                 lead to faster deployment. We help deliver value from AI
                 investments faster with better data by providing an end-to-end
@@ -125,7 +125,7 @@ const AboutUs = () => {
 
       <div className="p-2 text-white mb-20">
         <div>
-          <p className="text-xl mb-2">Leadership - </p>
+          <p className="text-xl mb-2 text-gradient">Leadership - </p>
           <div className="text-3xl mb-16">Executive Team</div>
 
           <div className="flex flex-row flex-wrap justify-evenly">
@@ -148,17 +148,17 @@ const AboutUs = () => {
                       width="601"
                       height="601"
                       src={`${member.image}`}
-                      class="attachment-full size-full wp-post-image"
+                      className="attachment-full size-full wp-post-image"
                       alt=""
                       loading="lazy"
-                      srcset="https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min.png 601w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-300x300.png 300w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-150x150.png 150w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-100x100.png 100w"
+                      srcSet="https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min.png 601w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-300x300.png 300w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-150x150.png 150w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-100x100.png 100w"
                       sizes="(max-width: 601px) 100vw, 601px"
                     />
                   </div>
 
                   <div className="member-header text-center text-sm text-purple-400">
-                    <div class="font-bold">{member.name}</div>
-                    <div class="member_designation">{member.position}</div>
+                    <div className="font-bold">{member.name}</div>
+                    <div className="member_designation">{member.position}</div>
                   </div>
                 </div>
 

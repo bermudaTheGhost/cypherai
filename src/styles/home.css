@@ -1,0 +1,48 @@
+.font-harmattan {
+  font-family: 'Harmattan', sans-serif;
+}
+
+.gif {
+  margin-top: 150px;
+  margin-left: -95px;
+  width: 600px;
+
+}
+
+.gif img {
+  max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+  .gif {
+    margin-top: 80px;
+    width: 860px;
+    margin-left: 10px;
+    /* height: 480px; */
+  }
+}
+
+@media (min-width: 1024px) {
+  .gif {
+    margin-top: 90px;
+    width: 900px;
+    margin-left: 15px;
+    /* height: 610px; */
+  }
+}
+
+@media (min-width: 1280px) {
+  .gif {
+    width: 1000px;
+    margin-left: 45px;
+  }
+}
+
+/*
+@media (min-width: 1536px) {
+  .gif {
+    margin-top: 0;
+    width: 1000px;
+    height: 800px;
+  }
+} */
