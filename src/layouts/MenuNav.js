@@ -1,6 +1,5 @@
 import React from "react";
 import Product from "../images/product.svg";
-import Close from "../images/close.svg";
 import { Link } from "react-router-dom";
 
 export default function MenuNav({ close }) {

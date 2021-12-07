@@ -1,5 +1,4 @@
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
 import AboutUs from "./pages/about-us";
 import ScreenLayout from "./layouts";
 import Products from "./pages/product";
