@@ -1,20 +1,19 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import AboutUs from "./pages/about-us";
 import ScreenLayout from "./layouts";
 import Products from "./pages/product";
 import Home from "./pages/home";
+import { Routes, Route } from "react-router";
 
 function App() {
   return (
     <ScreenLayout>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/about-us" element={<AboutUs />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/about-us" element={<AboutUs />} />
+      </Routes>
     </ScreenLayout>
   );
 }

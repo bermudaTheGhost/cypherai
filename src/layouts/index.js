@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/layout.css";
 import logo from "../logo.svg";
-import logoWhite from "../cypher-09.svg";
 import menu from "../images/menu.png";
 import product from "../images/product.svg";
 import MenuNav from "./MenuNav";
 import MenuProducts from "./MenuProducts";
-// import MenuCompany from "./MenuCompany";
 import Footer from "./Footer";
 
 const ScreenLayout = ({ children }) => {
@@ -22,13 +20,13 @@ const ScreenLayout = ({ children }) => {
         <header className="bg-transparent text-white w-full text-left relative z-50">
           {modalVisible && <MenuNav close={closeModal} />}
           <div className="container mx-auto flex items-center justify-between h-20 pr-6 pl-1">
-            <a href="/" className="nav-link">
-                <img
+            <Link to="/" className="nav-link">
+              <img
                 src={logo}
                 className="logo h-20 cursor-pointer"
                 alt="logo"
               />
-            </a>
+            </Link>
             <img
               src={menu}
               className="w-6 h-4 lg:hidden"
@@ -44,10 +42,9 @@ const ScreenLayout = ({ children }) => {
                 <MenuProducts urlImage={product} />
               </li>
               <li className="group relative cursor-pointer pt-4 hover:text-gray-300">
-                <a href="/about-us" className="nav-link">
+                <Link to="/about-us" className="nav-link">
                   About us
-                </a>
-                {/* <MenuCompany urlImage={product} /> */}
+                </Link>
               </li>
             </ul>
           </div>
