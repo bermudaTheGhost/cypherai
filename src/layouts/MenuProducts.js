@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function MenuProducts({ urlImage }) {
   return (
@@ -11,8 +12,8 @@ export default function MenuProducts({ urlImage }) {
           </h4>
           <ul className="grid grid-cols-none gap-y-9">
             <li className="hover-scale">
-              <a
-                href="/products"
+              <Link
+                to="/products"
                 className="m-0 p-0 select-none lg:whitespace-nowrap flex cursor-pointer"
               >
                 <img
@@ -26,12 +27,12 @@ export default function MenuProducts({ urlImage }) {
                     The fastest way to production-quality labels.
                   </p>
                 </div>
-              </a>
+              </Link>
             </li>
             {/* 2 */}
             <li className="hover-scale">
-              <a
-                href="/products"
+              <Link
+                to="/products"
                 className="m-0 p-0 select-none lg:whitespace-nowrap flex cursor-pointer"
               >
                 <img
@@ -45,12 +46,12 @@ export default function MenuProducts({ urlImage }) {
                     The fastest way to production-quality labels.
                   </p>
                 </div>
-              </a>
+              </Link>
             </li>
             {/* 3 */}
             <li className="hover-scale">
-              <a
-                href="/products"
+              <Link
+                to="/products"
                 className="m-0 p-0 select-none lg:whitespace-nowrap flex cursor-pointer"
               >
                 <img
@@ -64,7 +65,7 @@ export default function MenuProducts({ urlImage }) {
                     The fastest way to production-quality labels.
                   </p>
                 </div>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

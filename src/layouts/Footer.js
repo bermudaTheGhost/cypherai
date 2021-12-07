@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -14,28 +15,28 @@ export default function Footer() {
                 </h2>
                 <ul>
                   <li className="flex mb-3 text-xs md:text-sm md:mb-3">
-                    <a
+                    <Link
                       className="font-normal text-trueGray-400 hover:text-white"
-                      href="/products"
+                      to="/products"
                     >
                       Cypher Audius
-                    </a>
+                    </Link>
                   </li>
                   <li className="flex mb-3 text-xs md:text-sm md:mb-3">
-                    <a
+                    <Link
                       className="font-normal text-trueGray-400 hover:text-white"
-                      href="/products"
+                      to="/products"
                     >
                       Cypher Bot
-                    </a>
+                    </Link>
                   </li>
                   <li className="flex mb-3 text-xs md:text-sm md:mb-3">
-                    <a
+                    <Link
                       className="font-normal text-trueGray-400 hover:text-white"
-                      href="/products"
+                      to="/products"
                     >
                       Cypher Vision
-                    </a>
+                    </Link>
                   </li>
                   {/* 2 */}
                 </ul>
@@ -46,12 +47,12 @@ export default function Footer() {
                 </h2>
                 <ul>
                   <li className="flex mb-3 text-xs md:text-sm md:mb-3">
-                    <a
+                    <Link
                       className="font-normal text-trueGray-400 hover:text-white"
-                      href="/about-us"
+                      to="/about-us"
                     >
                       About us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -59,11 +60,11 @@ export default function Footer() {
           </nav>
 
           <div className="flex text-xs md:text-sm  justify-between flex-col md:flex-row pt-6 md:mt-12 pb-12 border-black-3 border-t">
-            <span class="text-trueGray-400">
+            <span className="text-trueGray-400">
               Copyright © 2021 Cypher AI, Inc. All rights reserved.
             </span>
-            <span class="mt-4 md:mt-0">
-              <p class="text-trueGray-400 font-normal">
+            <span className="mt-4 md:mt-0">
+              <p className="text-trueGray-400 font-normal">
                 Terms of Use &amp; Privacy Policy
               </p>
             </span>

@@ -11,7 +11,7 @@ const MemberModal = ({ member, closeMemberModal }) => {
         onClick={closeMemberModal}
       />
 
-      <div class="w-full max-w-2xl p-10 relative mx-auto my-auto rounded-xl shadow-lg bg-white ">
+      <div className="w-full max-w-2xl p-10 relative mx-auto my-auto rounded-xl shadow-lg bg-white ">
         {/* <!--content--> */}
         <div className="">
           {/* <!--body--> */}
@@ -27,7 +27,7 @@ const MemberModal = ({ member, closeMemberModal }) => {
                   width="601"
                   height="601"
                   src={`${member.image}`}
-                  class="attachment-full size-full wp-post-image"
+                  className="attachment-full size-full wp-post-image"
                   alt=""
                   loading="lazy"
                   srcset="https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min.png 601w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-300x300.png 300w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-150x150.png 150w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-100x100.png 100w"

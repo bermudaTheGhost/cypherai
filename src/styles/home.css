@@ -1,3 +1,11 @@
+.home {
+  height: 100vh;
+  min-height: 680px;
+  display: flex;
+  margin-top: -80px;
+  align-items: center;
+}
+
 .font-harmattan {
   font-family: 'Harmattan', sans-serif;
 }
