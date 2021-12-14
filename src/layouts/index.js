@@ -21,36 +21,32 @@ const ScreenLayout = ({ children }) => {
           {modalVisible && <MenuNav close={closeModal} />}
           <div className="container mx-auto flex items-center justify-between h-20 pr-6 pl-1">
             <Link to="/" className="nav-link">
-              <img
-                src={logo}
-                className="logo h-20 cursor-pointer"
-                alt="logo"
-              />
+              <img src={logo} className="logo h-20 cursor-pointer" alt="logo" />
             </Link>
-            <img
+            {/* <img
               src={menu}
               className="w-6 h-4 lg:hidden"
               alt="menu"
               onClick={openModal}
-            />
+            /> */}
             <ul className="hidden lg:flex lg:gap-x-6 lg:mr-16">
               <li className="group relative cursor-pointer pt-4 hover:text-gray-300">
-                <Link to={"/products"} className="nav-link">
+                {/* <Link to={"/products"} className="nav-link">
                   Products
-                </Link>
+                </Link> */}
                 {/* hover */}
                 <MenuProducts urlImage={product} />
               </li>
               <li className="group relative cursor-pointer pt-4 hover:text-gray-300">
-                <Link to="/about-us" className="nav-link">
+                {/* <Link to="/about-us" className="nav-link">
                   About us
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>
         </header>
         <div className="container mx-auto text-white">{children}</div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

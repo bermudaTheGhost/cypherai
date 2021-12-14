@@ -10,8 +10,8 @@ function App() {
     <ScreenLayout>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/about-us" element={<AboutUs />} />
+        {/* <Route path="/products" element={<Products />} />
+        <Route path="/about-us" element={<AboutUs />} /> */}
       </Routes>
     </ScreenLayout>
   );
