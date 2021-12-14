@@ -6,7 +6,6 @@ import menu from "../images/menu.png";
 import product from "../images/product.svg";
 import MenuNav from "./MenuNav";
 import MenuProducts from "./MenuProducts";
-import Footer from "./Footer";
 
 const ScreenLayout = ({ children }) => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -46,7 +45,6 @@ const ScreenLayout = ({ children }) => {
           </div>
         </header>
         <div className="container mx-auto text-white">{children}</div>
-        {/* <Footer /> */}
       </div>
     </div>
   );
