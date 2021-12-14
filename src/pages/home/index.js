@@ -34,7 +34,7 @@ export default function Home() {
                       <input
                         className="input-email bg-gray-700 border border-gray-700 appearance-none rounded-full w-full py-3 px-4 text-white leading-tight focus:outline-none focus:border-white hover:border-white"
                         type="text"
-                        placeholder="Enter your work email"
+                        placeholder="Join our community of 10,000+ taskers!"
                       />
                     </div>
                   </div>
@@ -44,7 +44,9 @@ export default function Home() {
               <div className="w-full md:w-1/3 md:pl-4 text-center">
                 <button className="bg-gradient-x hover:bg-gradient-to-r from-white to-white inline-block rounded-full p-px group cursor-pointer">
                   <span className="text-sm text-white bg-black group-hover:text-black group-hover:bg-white font-medium tracking-wide px-4 py-4 lg:py-2 leading-3 inline-block rounded-full whitespace-nowrap transition-color duration-200 lg:text-lg">
-                    Get in Touch
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoWWWm6WnBVnAvLOmNyv3Me-VgMayS_ifelXMUOmuKechEcA/viewform">
+                      Get in Touch
+                    </a>
                   </span>
                 </button>
               </div>
