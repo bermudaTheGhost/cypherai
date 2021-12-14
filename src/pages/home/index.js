@@ -41,7 +41,7 @@ export default function Home() {
                 </form>
               </div>
 
-              <div className="w-full md:w-1/3 md:pl-4 text-center pt-5">
+              <div className="w-full md:w-1/3 md:pl-4 text-center">
                 <button className="bg-gradient-x hover:bg-gradient-to-r from-white to-white inline-block rounded-full p-px group cursor-pointer">
                   <span className="text-sm text-white bg-black group-hover:text-black group-hover:bg-white font-medium tracking-wide px-4 py-4 lg:py-2 leading-3 inline-block rounded-full whitespace-nowrap transition-color duration-200 lg:text-lg">
                     Get in Touch
