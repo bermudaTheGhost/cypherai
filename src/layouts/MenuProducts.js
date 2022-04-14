@@ -24,7 +24,7 @@ export default function MenuProducts({ urlImage }) {
                 <div className="mr-11">
                   <p className="text-sm text-white">Cypher Audius</p>
                   <p className="text-sm text-grey-30">
-                    The fastest way to production-quality labels.
+                    Multi-lingual data collection and annotation.
                   </p>
                 </div>
               </Link>
@@ -43,7 +43,7 @@ export default function MenuProducts({ urlImage }) {
                 <div className="pr-4">
                   <p className="text-sm text-white">Cypher Bot</p>
                   <p className="text-sm text-grey-30">
-                    The fastest way to production-quality labels.
+                    Extract information and get vast corpus of text-based data.
                   </p>
                 </div>
               </Link>
@@ -62,7 +62,7 @@ export default function MenuProducts({ urlImage }) {
                 <div className="pr-4">
                   <p className="text-sm text-white">Cypher Vision</p>
                   <p className="text-sm text-grey-30">
-                    The fastest way to production-quality labels.
+                    Comprehensive 2D and 3D images annotation.
                   </p>
                 </div>
               </Link>
