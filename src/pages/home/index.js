@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <section className="home">
       <div className="relative pt-20 text-white sm:py-10">
-        <div className="container grid md:grid-cols-3 mx-auto px-4 md:px-10 pb-8">
+        <div className="container grid px-4 pb-8 mx-auto md:grid-cols-3 md:px-10">
           <div className="relative z-10 col-span-2">
             <h1 className="pt-8 text-4xl font-light leading-none md:pt-16 md:text-6xl lg:text-7.25xl">
               <span className="text-transform-gradient">Better Data.</span>
@@ -27,24 +27,26 @@ export default function Home() {
             </p>
 
             <div className="flex flex-row flex-wrap items-center w-full">
-              <div className="w-full md:w-2/3 mb-4 md:mb-0 md:pr-4">
+              <div className="w-full mb-4 md:w-2/3 md:mb-0 md:pr-4">
                 <form className="w-full">
                   <div className="md:flex md:items-center">
                     <div className="w-full text-sm lg:text-lg">
                       <input
-                        className="input-email bg-gray-700 border border-gray-700 appearance-none rounded-full w-full py-3 px-4 text-white leading-tight focus:outline-none focus:border-white hover:border-white"
+                        className="w-full px-4 py-3 leading-tight text-white bg-gray-700 border border-gray-700 rounded-full appearance-none input-email focus:outline-none focus:border-white hover:border-white"
                         type="text"
-                        placeholder="Enter your work email"
+                        placeholder="Join our community of 10,000+ taskers!"
                       />
                     </div>
                   </div>
                 </form>
               </div>
 
-              <div className="w-full md:w-1/3 md:pl-4 text-center">
-                <button className="bg-gradient-x hover:bg-gradient-to-r from-white to-white inline-block rounded-full p-px group cursor-pointer">
-                  <span className="text-sm text-white bg-black group-hover:text-black group-hover:bg-white font-medium tracking-wide px-4 py-4 lg:py-2 leading-3 inline-block rounded-full whitespace-nowrap transition-color duration-200 lg:text-lg">
-                    Get in Touch
+              <div className="w-full text-center md:w-1/3 md:pl-4">
+                <button className="inline-block p-px rounded-full cursor-pointer bg-gradient-x hover:bg-gradient-to-r from-white to-white group">
+                  <span className="inline-block px-4 py-4 text-sm font-medium leading-3 tracking-wide text-white duration-200 bg-black rounded-full group-hover:text-black group-hover:bg-white lg:py-2 whitespace-nowrap transition-color lg:text-lg">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoWWWm6WnBVnAvLOmNyv3Me-VgMayS_ifelXMUOmuKechEcA/viewform">
+                      Get in Touch
+                    </a>
                   </span>
                 </button>
               </div>

@@ -3,6 +3,15 @@ import FlagIcon from "../../images/flag.svg";
 import BackGroundMember from "../../images/member_background.svg";
 import "../../styles/about-us.css";
 import MemberModal from "./member-modal";
+import img9 from "images/image9.jpg";
+import img10 from "images/image10.jpg";
+import img11 from "images/image11.jpg";
+import img12 from "images/image12.jpg";
+import img13 from "images/image13.png";
+import img14 from "images/image14.png";
+import img15 from "images/image15.png";
+import img16 from "images/image16.png";
+import Footer from "layouts/Footer";
 
 const AboutUs = () => {
   const [modalIsVisible, setModalIsVisible] = useState([
@@ -44,47 +53,43 @@ const AboutUs = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "ALEX RATNER",
-      position: "Co-founder & CEO",
-      image: "https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min.png",
+      name: "Steve Hoang",
+      position: "CEO",
+      image: img9,
       description:
-        "Alex is a co-founder and CEO at Snorkel AI, and an Assistant Professor of Computer Science at the University of Washington. Before Snorkel AI, he completed his Ph.D. in CS at the Stanford AI lab.",
+        "Serial entrepreneur 9 years working experience in Technology industry. Co-founder, former CEO at Vietnam AI Solutions JSC. Thanh and his peers had built VAIS to become top AI companies in Vietnam specializing in Speech recognition.",
     },
     {
       id: 2,
-      name: "RICK TRAN",
-      position: "Co-founder",
-      image:
-        "https://snorkel.ai/wp-content/uploads/2021/03/Chris-Re-Photo-min.png",
+      name: "Anh Tran",
+      position: "Head of Engineering",
+      image: img10,
       description:
-        "Rick is a co-founder at Snorkel AI, and an Associate Professor in the Department of Computer Science at Stanford University. He is in the Stanford AI Lab and is affiliated with the Statistical Machine Learning Group. He has co-founded four companies, including Snorkel AI, SambaNova Systems, Lattice (acq. by Apple), and Inductiv (acq. by Apple) based on his research into ML systems and has received the MacArthur “Genius” Award.",
+        "8 years experience in software development and leading 30 outsourcing engineers. Besides, he successfully managed a $40M IT project. ",
     },
     {
       id: 3,
-      name: "CHRIS SANNO",
-      position: "Co-founder & Head of Solutions",
-      image:
-        "https://snorkel.ai/wp-content/uploads/2021/03/Paroma-Photo-min.png",
+      name: "Anh Pham",
+      position: "Head of AI",
+      image: img11,
       description:
-        "CHRIS is a co-founder and Head of Solutions at Snorkel AI. She received her Ph.D. from Stanford University focusing on weak supervision and making machine learning easily usable for domain experts and collaborated with teams at Facebook and Intel.",
+        "Ph.D. Student in Computer Vision at A2I2, Deakin University. Former-AI engineer at VinAI Research with main duties of Auto Pilot Perception features such as Parking Line, 360 View reconstruction, Free Space and Object Detection.",
     },
     {
       id: 4,
-      name: "BRADLEY SINBAD",
-      position: "Co-founder & Head of Technology",
-      image:
-        "https://snorkel.ai/wp-content/uploads/2021/03/Braden-photo-min.png",
+      name: "Linh Duong",
+      position: "Operation Director | Speech and NLP",
+      image: img12,
       description:
-        "BRADLEY is a co-founder and Head of Technology at Snorkel AI. Before Snorkel, Braden researched and developed new interfaces to machine learning systems in academia (Stanford, MIT, Johns Hopkins, BYU) and industry (Facebook, Google).",
+        "Graduating from the Japanese Department at Hanoi University, she was Operation Manager of VAIS’s labeling project. She managed up to 500 annotator and built the pools of 2800 crowdsourcing members.",
     },
     {
       id: 5,
-      name: "HENRY CAMACHO",
-      position: "Co-founder & Head of Engineering",
-      image:
-        "https://snorkel.ai/wp-content/uploads/2021/03/Henry-photo-min.png",
+      name: "Tuan Nguyen",
+      position: "Operation Director | Vision",
+      image: img13,
       description:
-        "Henry is co-founder and Head of Engineering at Snorkel AI. Before Snorkel AI, Henry was the tech lead for Facebook Applied AI’s representation learning team and spent his time in grad school building the Snorkel research library.",
+        "8 years experience in the Business Process Outsourcing field at FPT DPS - FPT Digital Processing Service as Project Director position, leading ~100 Project Managers and multi-million USD projects.",
     },
   ];
 
@@ -126,7 +131,7 @@ const AboutUs = () => {
       <div className="p-2 text-white mb-20">
         <div>
           <p className="text-xl mb-2 text-gradient">Leadership - </p>
-          <div className="text-3xl mb-16">Executive Team</div>
+          <div className="text-3xl mb-16">Founding team</div>
 
           <div className="flex flex-row flex-wrap justify-evenly">
             {teamMembers.map((member) => (
@@ -138,7 +143,14 @@ const AboutUs = () => {
                   className="team-item"
                   onClick={() => openMemberModal(member.id - 1)}
                 >
-                  <div
+                  <div className="thumbnail overflow-hidden mb-9 w-xs h-48">
+                    <img
+                      src={`${member.image}`}
+                      className="h-full rounded-lg"
+                      alt=""
+                    />
+                  </div>
+                  {/* <div
                     className="thumbnail border border-gray-800 rounded-lg overflow-hidden bg-no-repeat bg-cover mb-9"
                     style={{
                       backgroundImage: `url(${BackGroundMember})`,
@@ -148,13 +160,13 @@ const AboutUs = () => {
                       width="601"
                       height="601"
                       src={`${member.image}`}
-                      className="attachment-full size-full wp-post-image"
+                      className="size-full"
                       alt=""
                       loading="lazy"
-                      srcSet="https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min.png 601w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-300x300.png 300w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-150x150.png 150w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-100x100.png 100w"
+                      srcSet={member.image}
                       sizes="(max-width: 601px) 100vw, 601px"
                     />
-                  </div>
+                  </div> */}
 
                   <div className="member-header text-center text-sm text-purple-400">
                     <div className="font-bold">{member.name}</div>
@@ -174,65 +186,70 @@ const AboutUs = () => {
         </div>
       </div>
 
+      {/* 1 */}
       <div className="text-white px-2 xl:px-0">
-        <div className="text-3xl text-gray-400 mb-10">Capability & Scale</div>
+        <div className="text-3xl text-gray-400 mb-10">
+          Why do 90% of clients renew contracts with us?
+        </div>
 
         <div className="flex flex-row flex-wrap justify-center items-center mb-14">
           <div className="w-full mb-10 md:w-1/2 md:mb-0">
-            <div className="text-xl mb-4">Cost Effective</div>
+            <div className="text-xl mb-4">ANNOTATION ACCURACY</div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              voluptatibus, reprehenderit neque aspernatur, necessitatibus
-              voluptatem vero ad nulla, quaerat quidem laborum eius eos quos
-              maxime aperiam omnis earum tempore magnam.
+              Deliver manual labeling with structured QA/QC process to ensure
+              the highest quality with thorough project management. Cypher AI
+              provides a fully dedicated engagement manager who will ensure
+              smooth on-boarding and continued data delivery.
             </div>
           </div>
 
           <div className="w-full mb-10 md:w-1/2 md:mb-0">
-            <div
-              style={{ background: "white", width: "300px", height: "300px" }}
-            ></div>
+            <div>
+              <img src={img14} alt="" />
+            </div>
           </div>
         </div>
 
         {/* 2 */}
         <div className="flex flex-row flex-wrap justify-center items-center mb-14">
           <div className="w-full mb-10 md:w-1/2 md:mb-0">
-            <div className="text-xl mb-4">Cost Effective</div>
+            <div className="text-xl mb-4">SCALABILITY</div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              voluptatibus, reprehenderit neque aspernatur, necessitatibus
-              voluptatem vero ad nulla, quaerat quidem laborum eius eos quos
-              maxime aperiam omnis earum tempore magnam.
+              Maintain quality for a large scale dataset with +10,000
+              experienced annotators. Cypher AI created a job opportunity for
+              disadvantaged and poor people in the central area of Vietnam such
+              as Da Nang, Quang Binh, Quy Nhon, etc.
             </div>
           </div>
 
           <div className="w-full mb-10 md:w-1/2 md:mb-0">
-            <div
-              style={{ background: "white", width: "300px", height: "300px" }}
-            ></div>
+            <div>
+              <img src={img15} alt="" />
+            </div>
           </div>
         </div>
 
         {/* 3 */}
         <div className="flex flex-row flex-wrap justify-center items-center mb-14">
           <div className="w-full mb-10 md:w-1/2 md:mb-0">
-            <div className="text-xl mb-4">Cost Effective</div>
+            <div className="text-xl mb-4">COST-EFFICIENT SOLUTION</div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              voluptatibus, reprehenderit neque aspernatur, necessitatibus
-              voluptatem vero ad nulla, quaerat quidem laborum eius eos quos
-              maxime aperiam omnis earum tempore magnam.
+              Eliminate high risk of opportunity cost. We can offer the most
+              cost-effective solution for high-quality labels at any volume. The
+              main reasons come from our business's cost structure and
+              inexpensive-yet-professional annotation team.
             </div>
           </div>
 
           <div className="w-full mb-10 md:w-1/2 md:mb-0">
-            <div
-              style={{ background: "white", width: "300px", height: "300px" }}
-            ></div>
+            <div>
+              <img src={img16} alt="" />
+            </div>
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

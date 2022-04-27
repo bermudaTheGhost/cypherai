@@ -17,21 +17,11 @@ const MemberModal = ({ member, closeMemberModal }) => {
           {/* <!--body--> */}
           <div className="flex flex-row justify-start items-center mb-7">
             <div className="" style={{ width: "80px", height: "80px" }}>
-              <div
-                className="thumbnail border border-gray-800 rounded-lg overflow-hidden bg-no-repeat bg-cover mb-9"
-                style={{
-                  backgroundImage: `url(${BackGroundMember})`,
-                }}
-              >
+              <div className="thumbnail overflow-hidden mb-9 border border-gray-400 rounded-lg">
                 <img
-                  width="601"
-                  height="601"
                   src={`${member.image}`}
-                  className="attachment-full size-full wp-post-image"
+                  className="h-full rounded-lg"
                   alt=""
-                  loading="lazy"
-                  srcset="https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min.png 601w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-300x300.png 300w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-150x150.png 150w, https://snorkel.ai/wp-content/uploads/2021/03/Alex-Photo-min-100x100.png 100w"
-                  sizes="(max-width: 601px) 100vw, 601px"
                 />
               </div>
             </div>
