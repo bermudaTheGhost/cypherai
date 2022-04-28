@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import FlagIcon from "../../images/flag.svg";
 import BackGroundMember from "../../images/member_background.svg";
 import "../../styles/about-us.css";
 import MemberModal from "./member-modal";
@@ -11,6 +10,8 @@ import img13 from "images/image13.png";
 import img14 from "images/image14.png";
 import img15 from "images/image15.png";
 import img16 from "images/image16.png";
+import img17 from "images/image17.jpg";
+import img18 from "images/image18.jpg";
 import Footer from "layouts/Footer";
 
 const AboutUs = () => {
@@ -25,23 +26,27 @@ const AboutUs = () => {
   const openMemberModal = (id) => {
     switch (id) {
       case 0: {
-        setModalIsVisible([true, false, false, false, false]);
+        setModalIsVisible([true, false, false, false, false, false]);
         break;
       }
       case 1: {
-        setModalIsVisible([false, true, false, false, false]);
+        setModalIsVisible([false, true, false, false, false, false]);
         break;
       }
       case 2: {
-        setModalIsVisible([false, false, true, false, false]);
+        setModalIsVisible([false, false, true, false, false, false]);
         break;
       }
       case 3: {
-        setModalIsVisible([false, false, false, true, false]);
+        setModalIsVisible([false, false, false, true, false, false]);
         break;
       }
       case 4: {
-        setModalIsVisible([false, false, false, false, true]);
+        setModalIsVisible([false, false, false, false, true, false]);
+        break;
+      }
+      case 5: {
+        setModalIsVisible([false, false, false, false, false, true]);
         break;
       }
       default:
@@ -77,6 +82,14 @@ const AboutUs = () => {
     },
     {
       id: 4,
+      name: "Joy Hoang",
+      position: "Regional Growth Director | Europe",
+      image: img17,
+      description:
+        "8-year experience in Tech firms such as Zalora, Shopee & Insider. Recently, she's former Senior Growth Manager and Global Sales Trainer at Insider, top 1 AI-backed Personalization solutions",
+    },
+    {
+      id: 5,
       name: "Linh Duong",
       position: "Operation Director | Speech and NLP",
       image: img12,
@@ -84,7 +97,7 @@ const AboutUs = () => {
         "Graduating from the Japanese Department at Hanoi University, she was Operation Manager of VAIS’s labeling project. She managed up to 500 annotator and built the pools of 2800 crowdsourcing members.",
     },
     {
-      id: 5,
+      id: 6,
       name: "Tuan Nguyen",
       position: "Operation Director | Vision",
       image: img13,
@@ -101,14 +114,8 @@ const AboutUs = () => {
           <div className="absolute inset-0 w-full bg-gradient-to-b from-black h-screen" />
         </div>
 
-        <div className="px-4 lg:px-0 py-16 lg:py-32 xl:py-56 xl:pt-40">
+        <div className="px-4 lg:px-0 py-16 lg:py-32 xl:py-56 xl:pt-40 h-screen">
           <div className="container relative lg:px-8">
-            <img
-              className="mt-0  mb-8 h-16 md:h-18"
-              src={FlagIcon}
-              alt="About Page Icon"
-            />
-
             <h1 className="text-white font-aeonik font-light text-4xl md:text-7xl mb-8">
               <div className="lg:max-w-6xl">
                 Our mission is to accelerate the development of
@@ -193,7 +200,7 @@ const AboutUs = () => {
         </div>
 
         <div className="flex flex-row flex-wrap justify-center items-center mb-14">
-          <div className="w-full mb-10 md:w-1/2 md:mb-0">
+          <div className="w-full mb-10 md:w-1/2 md:mb-0 pr-4">
             <div className="text-xl mb-4">ANNOTATION ACCURACY</div>
             <div>
               Deliver manual labeling with structured QA/QC process to ensure
@@ -212,13 +219,15 @@ const AboutUs = () => {
 
         {/* 2 */}
         <div className="flex flex-row flex-wrap justify-center items-center mb-14">
-          <div className="w-full mb-10 md:w-1/2 md:mb-0">
+          <div className="w-full mb-10 md:w-1/2 md:mb-0 pr-4">
             <div className="text-xl mb-4">SCALABILITY</div>
             <div>
-              Maintain quality for a large scale dataset with +10,000
-              experienced annotators. Cypher AI created a job opportunity for
+              Maintaining high quality for large scale dataset with +10,000
+              experienced annotators, Cypher AI created a job opportunity for
               disadvantaged and poor people in the central area of Vietnam such
-              as Da Nang, Quang Binh, Quy Nhon, etc.
+              as Da Nang, Quang Binh, Quy Nhon, etc. Beside, we deliver manual
+              labelling with structured QA/QC process to ensure the highest
+              quality and strategically dedicated project manager.
             </div>
           </div>
 
@@ -231,7 +240,7 @@ const AboutUs = () => {
 
         {/* 3 */}
         <div className="flex flex-row flex-wrap justify-center items-center mb-14">
-          <div className="w-full mb-10 md:w-1/2 md:mb-0">
+          <div className="w-full mb-10 md:w-1/2 md:mb-0 pr-4">
             <div className="text-xl mb-4">COST-EFFICIENT SOLUTION</div>
             <div>
               Eliminate high risk of opportunity cost. We can offer the most
@@ -243,7 +252,7 @@ const AboutUs = () => {
 
           <div className="w-full mb-10 md:w-1/2 md:mb-0">
             <div>
-              <img src={img16} alt="" />
+              <img src={img18} alt="" />
             </div>
           </div>
         </div>

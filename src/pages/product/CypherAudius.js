@@ -8,9 +8,6 @@ export default function CypherAudius() {
     <div className="py-20 lg:py-36 bg-transparent px-6">
       <div className="container">
         <div className="section-natural md:max-w-4xl mb-24">
-          <h2 className="inline-block text-overtitle text-gradient">
-            Use case
-          </h2>
           <h1 className="text-white font-aeonik my-6 w-full text-4xl lg:text-5xl">
             Cypher Audius - Audio and Speech
           </h1>
