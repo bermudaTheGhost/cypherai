@@ -58,7 +58,7 @@ const AboutUs = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Steve Hoang",
+      name: "Thanh Hoang",
       position: "CEO",
       image: img9,
       description:
